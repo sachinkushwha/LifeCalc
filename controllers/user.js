@@ -23,5 +23,8 @@ exports.postHome=(req,res,next)=>{
         todays=parseInt(todays);
         res.render('result',{remaingdays:todays,hour:hour});
     }
-    res.render('result',{remaingdays:"0",hour:"0"});
+    else{
+        res.render('result',{remaingdays:"0",hour:"0"});
+    }
+    
 }
